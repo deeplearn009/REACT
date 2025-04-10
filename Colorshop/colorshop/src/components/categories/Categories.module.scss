@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .categories {
+            width: 1140px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+                button {
+                    width: 102px;
+                    height: 40px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    border: 1px solid #ebebeb;
+                    font-size: 14px;
+                    font-weight: 500;
+                    background-color: #fff;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    
+                }
+                #fbtn {
+                    width: 102px;
+                    height: 40px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    border: 1px solid #ebebeb;
+                    font-size: 14px;
+                    font-weight: 500;
+                    background-color: #fe4c50;
+                    color: white;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    transition: .5s;
+                        &:hover {
+                            transition: .5s;
+                            background-color: lab(69.97% 45.17 19.51);
+                        }
+                }
+
+                
+
+        }
+}

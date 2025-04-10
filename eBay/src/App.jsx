@@ -23,15 +23,12 @@ const getData = () => {
     getData();
   })
 
-
-
-
-
   return (
     <>
     
     <Header/>
     <Products/>
+    <Card/>
 
     <div className='cards'>
 
