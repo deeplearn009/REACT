@@ -1,0 +1,39 @@
+
+
+    .navbar {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    
+        .center {
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 90px;
+            font-size: 18px;
+    
+            p {
+                a {
+                    text-decoration: none;
+                    color: black;
+                    transition: 0.2s;
+                    
+                    &:hover {
+    
+                        color: hsl(45, 80%, 46%);
+                        transition: 0.2s;
+    
+                    }
+                }
+            }
+    
+        }
+    
+    }
+
+
+
+
+
+
