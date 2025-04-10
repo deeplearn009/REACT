@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import Header from './components/header/Header'
 import Products from './components/products/Products'
 import Cards from './components/cards/Card'
@@ -7,11 +7,25 @@ import axios from 'axios'
 
 function App() {
   const [data, setData] = useState([]);
-  window.onload = () => {
-    axios.get("https://fakestoreapi.com/products").then((res) => {
-      setData(res.data);
-    });
+  // window.onload = () => {
+  //   axios.get("https://fakestoreapi.com/products").then((res) => {
+  //     setData(res.data);
+  //   });
+  // };
+
+const getData = () => {
+  axios.get("https://fakestoreapi.com/products").then((res) => {
+    setData(res.data);
+  });
   };
+
+  useEffect(() => {
+    getData();
+  })
+
+
+
+
 
   return (
     <>
