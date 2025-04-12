@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 80px;
+    .titles {
+      width: 30%;
+      h3 {
+        font-size: 14px;
+        font-weight: 700;
+        color: #adb5bd;
+        letter-spacing: 3px;
+        margin: 0px 0px 8px;
+        }
+        h2 {
+        font-size: 44px;
+        color: #000;
+        font-weight: 900;
+        margin-bottom: 16px;
+        }
+        p {
+        margin-bottom: 16px;
+        color: #808080;
+        line-height: 1.5;
+        }
+    }
+}
