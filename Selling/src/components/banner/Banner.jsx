@@ -1,6 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Banner.module.scss'
+import axios from 'axios'
 const Banner = () => {
+
+  const [email,setEmail] = useState("")
+
+  const sendData = (e) => {
+    e.preventDefault();
+    axios.post("https://northwind.vercel.app/api/categories", {
+      email: email
+    })
+
+  };
+
+
   return (
     <div className={styles.container}>
       
@@ -13,10 +26,10 @@ const Banner = () => {
         </div>
 
 
-        <div className={styles.inputs}>
+        <div className={styles.inputs} onClick={sendData}>
          
-          <input type="text" placeholder='Enter your email address' />
-          <button>SUBSCRIBE</button>
+          <input type="text" placeholder='Enter your email address' value={email} onChange={(e) => setEmail(e.target.value)}/>
+          <button type="submit">SUBSCRIBE</button>
 
         </div>
 
