@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+    padding: 20px 0px;
+    background-color: black;
+        button {
+            padding: 12px 26px;
+            border-radius: 5px;
+            background-color: #F0BB78;
+            border: none;
+            color: #000;
+            transition: .5s;
+            cursor: pointer;
+                &:hover {
+                    background-color: #885e1f;
+                    transition: .5s;
+                }
+        }
+}
