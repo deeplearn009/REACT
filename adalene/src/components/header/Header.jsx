@@ -12,7 +12,7 @@ const Header = () => {
             </div>
 
             <div className={styles.center}>
-                <h1>adalene.</h1>
+                <i>adalene.</i>
             </div>
 
             <div className={styles.right}>

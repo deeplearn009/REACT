@@ -7,6 +7,8 @@ const Router = () => {
   return (
 
     <BrowserRouter>
+
+    
         <Header/>
 
         <Routes>

@@ -39,7 +39,7 @@ function App() {
       <Section1/>
       <Section2/>
 
-      <div className="section3">
+      <div className="section">
 
         {data && data.slice(0, 6).map((item) => <Card item={item} />)}
 
