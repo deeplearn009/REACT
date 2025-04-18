@@ -1,0 +1,55 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 12px 16px;
+        #title {
+            font-size: 40px;
+            padding: 48px 12px;
+            margin: 0px 0px 8px;
+        }
+        .content {
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 150px;
+                .icon {
+                    width: 20%;
+                    position: relative;
+                        #icon {
+                            position: absolute;
+                            top: -78px;
+                            right: 26px;
+                            font-size: 28px;
+                        }
+                }
+                .par {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                        h2 {
+                            font-size: 28px;
+                            color: #212529;
+                            margin: 0px 0px 8px;
+                            padding: 0px 0px 24px;
+                        }
+                        p {
+                            margin: 0px 0px 16px;
+                            padding: 0px 8px 16px;
+                            color: #6c757d;
+                        }
+                }
+        }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .container .content {
+        width: 90%;
+        padding: 0;
+    }
+}
