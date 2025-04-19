@@ -1,0 +1,123 @@
+.container {
+  background-color: #6266ea;
+}
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0;
+  height: 100%;
+}
+.topcont {
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  button {
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    &:hover {
+      background-color: #4232c2;
+      transition: 0.3s;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    button {
+      margin: 2rem 0;
+    }
+  }
+}
+.bottom {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.bottomcont {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+  gap: 1.5rem;
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    width: 95%;
+  }
+  @media screen and (min-width: 425px) and (max-width: 565px) {
+    justify-content: center;
+  }
+}
+.cont {
+  width: 23%;
+  height: 300px;
+
+  border-radius: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: end;
+  transition: filter 0.3s ease;
+  filter: brightness(90%);
+  p {
+    font-weight: 400;
+  }
+  &:hover {
+    filter: brightness(110%);
+    p {
+      color: black;
+    }
+    .par {
+      background-color: rgba(255, 255, 255, 0.5);
+      transition: 0.5s;
+    }
+    button {
+      border: 1px solid black;
+      color: black;
+      transition: 0.5s;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 425px) and (max-width: 565px) {
+    width: 70%;
+  }
+  @media screen and (min-width: 565px) and (max-width: 768px) {
+    width: 47%;
+  }
+}
+.par {
+  width: 100%;
+  height: 40%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  button {
+    width: 40%;
+    height: 2.5rem;
+    border-radius: 15px;
+    border: none;
+    border: 1px solid rgb(255, 255, 255);
+    background: none;
+    color: white;
+    font-weight: 400;
+    &:hover {
+      background-color: white;
+      transform: 0.3s;
+      border: none;
+    }
+  }
+  p {
+    color: white;
+    font-weight: 300;
+  }
+}

@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './Home.module.scss'
 import Services from '../../components/services-p/Services';
+import Banner from '../../components/banner/Banner';
+import Works from '../../components/works/Works';
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
       </div>
 
       <Services/>
+      <Banner/>
+      <Works/>
 
     </div>
   )
