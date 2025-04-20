@@ -133,3 +133,26 @@
                 }
         }
 }
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .container .con .contact {
+        width: 90%;
+        flex-direction: column;
+            .left, .right {
+                width: 100%;
+            }
+    }
+
+    .container {
+        section {
+            padding: 0;
+            width: 90%;
+                .form_p {
+                    flex-direction: column;
+                        .left, .right {
+                            width: 100%;
+                        }
+                }
+        }
+    }
+}
